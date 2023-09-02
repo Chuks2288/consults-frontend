@@ -1,0 +1,386 @@
+.about__hero-bg {
+    min-height: 80vh;
+    background-image: url("../images/aboutHeroBg.webp");
+    background-position: cover;
+    background-size: cover;
+    padding: 1rem 3rem;
+
+}
+
+
+.about__hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+
+    h2 {
+        font-size: 4rem;
+        color: #fff;
+        margin-bottom: 2rem;
+
+        @media(max-width: 768px) {
+            font-size: 2.7rem;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+.aboutSub {
+    margin: 10rem 3rem;
+    margin-top: -6rem;
+
+}
+
+.aboutSub__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 15rem;
+    padding: 0 4rem;
+    border-radius: 1rem;
+    background: rgb(112, 64, 64);
+
+
+    .aboutSub__top-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 18rem;
+        color: #fff;
+
+
+        span {
+            font-size: 3rem;
+            margin-right: 2rem;
+
+            @media(max-width: 768px) {
+                font-size: 1.8rem;
+            }
+        }
+
+        h2 {
+            line-height: 1.5;
+            font-size: 1.6rem;
+
+            @media(max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+
+        @media(max-width: 768px) {
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+}
+
+
+
+
+.aboutSub__bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8rem;
+
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+
+
+.aboutSub__bottom-content {
+    display: flex;
+    max-width: 23rem;
+
+    span {
+        font-size: 2.3rem;
+        margin-right: 2.3rem;
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 4rem;
+        max-width: 100%;
+    }
+}
+
+.aboutSub__bottom-content2 {
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+
+        @media(max-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    p {
+        line-height: 1.7;
+
+        @media(max-width: 768px) {
+            font-size: 15px;
+        }
+    }
+}
+
+
+
+.biography {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 3rem;
+    background-image: url("../images/aboutBio.webp"),
+        linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9));
+    background-blend-mode: overlay;
+
+
+    @media(max-width: 768px) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+
+.biography__top {
+    flex: 1;
+    max-width: 41rem;
+    color: white;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+
+        @media(max-width: 768px) {
+            font-size: 2.2rem;
+        }
+    }
+
+    p {
+        margin: 2rem 0;
+        line-height: 1.5;
+
+        @media(max-width: 768px) {
+            text-align: justify;
+        }
+    }
+}
+
+.biography__bottom {
+    flex: 1;
+    max-width: 30rem;
+
+    img {
+        width: 100%;
+        border-radius: .5rem;
+    }
+}
+
+
+
+.board {
+    margin: 3rem 3rem;
+}
+
+
+.board__top {
+    min-height: 25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
+    h2 {
+        flex: 1;
+        max-width: 50rem;
+        font-size: 3rem;
+
+        @media(max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    P {
+        flex: 1;
+        max-width: 40rem;
+        font-size: 1.3rem;
+        line-height: 2;
+
+        @media(max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+
+
+.board__middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+
+    @media(max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.board__middle-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.board__middle-photo {
+    width: 24rem;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 30rem;
+        border-radius: .7rem;
+    }
+
+    @media(max-width: 768px) {
+        width: 100%;
+    }
+
+}
+
+.board__middle-info {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+
+    h2 {
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: peru;
+    }
+}
+
+
+.board__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+    background: rgb(71, 51, 51);
+    margin: 6rem 0;
+
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        overflow-x: hidden;
+
+    }
+}
+
+
+.board__bottom-photo {
+    margin-top: -5rem;
+    margin-right: 5rem;
+    width: 30rem;
+
+
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 35rem;
+
+
+        @media(max-width: 768px) {
+            height: 30rem;
+        }
+    }
+
+    @media(max-width: 768px) {
+        width: 100%;
+    }
+}
+
+
+
+.board__bottom-content {
+    flex: 1;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h2 {
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 2rem;
+
+        @media(max-width: 768px) {
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    P {
+        font-size: 1.4rem;
+        line-height: 2;
+        margin-bottom: 4rem;
+        color: #fff;
+
+        @media(max-width: 768px) {
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+
+
+}
+
+.consult__btn {
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: white;
+    background: peru;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: .6rem;
+
+    @media(max-width: 768px) {
+        margin: 0 auto;
+    }
+}

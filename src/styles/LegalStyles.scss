@@ -1,0 +1,126 @@
+.legal {}
+
+
+.legal__top {
+    display: flex;
+    min-height: 70vh;
+    background: #F1F1F1;
+    // background: blue;
+    padding: 5rem 3rem;
+
+    h2 {
+        flex: 1;
+        font-size: 3rem;
+
+        br {
+            display: flex;
+
+            @media(max-width: 768px) {
+                display: none;
+            }
+        }
+
+        @media(max-width: 768px) {
+            font-size: 2rem;
+            margin-bottom: -10rem;
+            text-align: center;
+        }
+    }
+
+    p {
+        flex: 1;
+        font-size: 20px;
+        line-height: 2;
+        letter-spacing: 1px;
+
+        @media(max-width: 768px) {
+            font-size: .9rem;
+            text-align: center;
+        }
+    }
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 6rem;
+    }
+
+}
+
+
+.legal__bottom {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 3rem;
+    margin-top: -12rem;
+
+
+    @media(max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media(max-width: 768px) {
+        margin-top: -20rem;
+    }
+
+}
+
+.legal__info {
+    width: 18rem;
+    position: relative;
+
+
+    img {
+        width: 100%;
+        height: 35rem;
+        object-fit: cover;
+        border-radius: .7rem;
+
+
+        @media(max-width: 768px) {
+            height: 30rem;
+        }
+    }
+
+    @media(max-width: 991px) {
+        width: 22rem;
+    }
+
+    @media(max-width: 768px) {
+        width: 100%;
+    }
+}
+
+
+.legal__info-content {
+    border: 2px solid rgba(0, 0, 0, .01);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    padding-bottom: 2rem;
+    text-align: center;
+    filter: drop-shadow(0 -9mm 8mm black);
+    background: rgba(0, 0, 0, 0.38);
+    backdrop-filter: blur(2px);
+
+    h3 {
+        padding-top: .6rem;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+    }
+
+    span {
+        color: peru;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}

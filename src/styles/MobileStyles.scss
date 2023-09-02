@@ -1,0 +1,144 @@
+.mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+
+    @media(min-width: 961px) {
+        display: none;
+    }
+}
+
+.socialmedia__icons {
+    display: flex;
+    margin-top: 2rem;
+
+    .socialmedia__icon {
+        display: flex;
+        color: rgb(161, 134, 106);
+
+
+        span {
+            width: 2rem;
+            height: 2rem;
+            border: 1px solid rgb(161, 134, 106);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.mobile__top {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 2rem;
+
+    img {
+        width: 100%;
+    }
+}
+
+.mobile__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mobile__item {
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.mobile__item-name {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+
+
+.activeMobile {
+    color: grey;
+    font-size: 14px;
+}
+
+.contact__bottom {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        font-size: 16px;
+        font-weight: 500px;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    span {
+        padding: 1rem 3rem;
+        border-radius: 1.5rem;
+        background: grey;
+        cursor: pointer;
+    }
+}
+
+.mobile__close-btn {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100000;
+
+    &:hover {
+        transform: rotate(45deg);
+    }
+}
+
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

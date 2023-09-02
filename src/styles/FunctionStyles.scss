@@ -1,0 +1,116 @@
+// .function {
+//     height: 100vh;
+//     // background-image: linear-gradient() url();
+//     // background-image: linear-gradient(#24221E) url('../images/contact.webp');
+//     background-image: url('../images/consult.jpg');
+
+// }
+
+.function {
+    min-height: 100vh;
+    background-image: url("../images/contact.webp"), linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: bottom;
+    padding: 6rem 3rem;
+    color: white;
+}
+
+.function__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .function__title {
+        font-size: 2.3rem;
+        margin-bottom: 3rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 45%;
+            top: -30px;
+            width: 10%;
+            height: 5px;
+            background-color: rgb(143, 106, 70);
+
+        }
+    }
+
+    p {
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 14px;
+        margin-bottom: 4rem;
+    }
+}
+
+.funct__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    text-align: center;
+
+    .funct__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 20rem;
+
+        span {
+            font-size: 3rem;
+            color: rgb(160, 121, 82);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 2;
+        }
+
+        @media(max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+
+    @media(max-width: 991px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media(max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+.funct__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    span {
+        padding: 1rem 2rem;
+        background: rgb(168, 124, 80);
+        border-radius: .4rem;
+        font-size: 18px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+}
